@@ -1,0 +1,151 @@
+/* reset degli stili di default del browser*/
+body {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* stili per la barra di navigazione */
+.main-navbar, .two-column-section {
+    display: flex;
+}
+
+
+
+.main-navbar {
+    height: 50px;
+    width: 100%;
+    background-color: #5E9732;
+    box-shadow: 0px 3px 6px #000000;
+    padding:5px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo-container {
+    margin-left:15px;
+}
+
+.main-navbar a {
+    padding: 10px;
+}
+
+.main-navbar a:hover {
+    background-color: #3C7113;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0px 15px 0px 0px;
+    display: none;
+}
+
+/* stili per la hero-section*/
+.hero-section {
+    position: relative;
+    top:50px;
+    height: 30vh;
+    overflow: hidden;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-section h1 {
+    margin:0;
+    padding: 30px;
+    position: absolute;
+    bottom:20%;
+    left:5%;
+    color: white;
+    background-color: #3c7113c3;
+    text-shadow: 2px 2px 3px black;
+    border-radius: 80%;
+}
+
+/* stili per le section di contenuto */
+.single-column-section, .two-column-section {
+    margin: 20px 3%;
+    padding-top: 70px;
+}
+
+.two-column-section {
+    
+    flex-direction: column;
+}
+
+.two-column-section div {
+        width: 100%;
+}
+
+.two-column-section img {
+    width: 100%;
+    height: auto;
+}
+
+.two-column-section h2, .two-column-section h3 {
+    text-align: center;
+}
+
+/* stili per il contact form */
+.contact-form div {
+    margin: 10px 0px;
+}
+.contact-form input {
+    height: 40px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    
+}
+.contact-form input, .contact-form textarea {
+    width: 95%;
+    border: 0;
+    border-bottom: solid thin #3C7113;
+    padding: 5px 5px 5px 15px;
+    
+}
+
+.contact-form input:focus-visible, .contact-form textarea:focus-visible {
+    outline: 3px solid #3C7113;
+    border-radius: 3px;
+}
+
+.submit-btn input {
+    width: 200px;
+    margin: 10px auto;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #3C7113;
+    color: white;
+    font-size: 15px;
+}
+
+.submit-btn input:hover {
+    background-color: rgb(143, 191, 30);
+    transition: all;
+    transition-duration: 2s;
+}
+
+/* stile per il footer*/
+.main-footer {
+    background-color: #3C7113;
+    text-align: center;
+    height: 60px;
+    padding-top: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
